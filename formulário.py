@@ -9,7 +9,23 @@ class Lead:
         self.celular = celular
         self.nome_completo = nome_completo
 
-def
+
+def registro_bd():
+    # Conexão com banco de dados
+    import mysql.connector
+    conexao = mysql.connector.connect(
+        host='localhost',
+        user='Maximiano',
+        password='Pemax1992',
+        database='bdcadastrofamilia',
+    )
+
+    cursor = conexao.cursor()
+
+    # Comando para inserir e salvar dados inputados no banco de dados
+    comando = f'INSERT INTO formulario-lead (nome_completo, celular, email, data_nascimento, descricao) VALUES '
+    cursor.execute(comando)
+    conexao.commit()
 
 
 if __name__ == "__main__":
