@@ -9,6 +9,7 @@ class Lead:
         self.nome_completo = nome_completo
         self.descricao = descricao
 
+lead = Lead('Vitor Max', '192391293129', 'asdasd@dfgkasdo','2190931290', 'Saber')
 
 def registro_bd():
     # Conexão com banco de dados
@@ -30,8 +31,9 @@ def registro_bd():
 
 
 if __name__ == "__main__":
-    lead = Lead('Vitor', '192391293129', 'asdasd@dfgkasdo','2190931290', 'Saber')
+
     lead1 = Lead('Pedro Maximiano', '19991002700', 'peeemax@hotmail.com', '13/09/1992', 'Saber de mais')
+    lead2 = Lead('Pedro Max', '19991002700', 'peeemax@hotmail.com', '13/09/1992', 'Saber de mais')
 
     registro_bd()
 
