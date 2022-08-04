@@ -1,3 +1,9 @@
+import requests
+
+
+def buscar_dados():
+    request = requests.get("")
+    print(request.content)
 
 
 class Lead:
@@ -10,6 +16,7 @@ class Lead:
         self.descricao = descricao
 
 lead = Lead('Vitor Max', '192391293129', 'asdasd@dfgkasdo','2190931290', 'Saber')
+
 
 def registro_bd():
     # Conexão com banco de dados
