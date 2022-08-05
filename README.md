@@ -1,4 +1,3 @@
 # Formulario-Lead
 
-Página de formulário de captação de Lead, com input de informações do possível cliente e botão de cadastro para 
-armazenamento no banco de dados.
+API que recebe o input do usuário do Github e traz as informações do usuário para o Banco de dados MySQL.
